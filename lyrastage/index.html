@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090a12" />
+  <meta name="description" content="LyraStage - 音楽、YouTube、歌詞、録音、解析をひとつのライブラリで扱うWindows向け音楽アプリ。" />
+  <title>LyraStage - HisagiLabs</title>
+  <link rel="stylesheet" href="../assets/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"></span><span>HisagiLabs</span></a>
+      <nav class="nav" aria-label="LyraStageナビゲーション">
+        <a href="./" aria-current="page">LyraStage</a>
+        <a class="keep-mobile" href="guide/">使い方</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Windows music workspace</span>
+          <h1>LyraStage</h1>
+          <p class="lead">手持ちの曲とYouTubeをひとつのライブラリへ。歌詞を見て、キーやテンポを確かめ、必要なら録音してMIXまで進められる音楽プレイヤーです。</p>
+          <div class="actions">
+            <a class="button primary" href="guide/">使い方を見る</a>
+            <a class="button secondary" href="#features">機能を見る</a>
+          </div>
+          <div class="badges">
+            <span class="badge accent"><span class="status-dot"></span>Current stable v0.17.23</span>
+            <span class="badge">Windows 11</span>
+            <span class="badge">Full / Player</span>
+          </div>
+        </div>
+        <figure class="hero-visual" style="margin:0">
+          <div class="app-shot"><img src="assets/motion-lyrics-demo.png" alt="LyraStageのモーション歌詞表示。中央に歌詞、右に同期歌詞パネル、下にプレイヤーが表示されている。" /></div>
+          <figcaption class="muted small" style="margin-top:12px">実際のWindows版 v0.17.23 診断用サンプル画面。個人ライブラリのデータは使用していません。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">What you can do</span>
+          <h2 style="margin-top:13px">再生から歌うところまで、ひとつにつなぐ。</h2>
+          <p>ライブラリを中心に、再生、歌詞、オフライン、録音、解析へ移動できます。必要な機能だけを使っても構いません。</p>
+        </div>
+        <div class="grid cols-3">
+          <article class="card"><div class="feature-icon">♪</div><h3>音楽・YouTubeライブラリ</h3><p>ローカル音源とYouTubeの曲を同じライブラリで管理。検索結果では保存済みの曲を優先し、プロフィールやプレイリストで整理できます。</p></article>
+          <article class="card"><div class="feature-icon">LY</div><h3>同期歌詞・モーション歌詞</h3><p>同期歌詞をサイドパネルでも中央ステージでも表示。歌詞候補は自動適用せず、内容を確認してから選べます。</p></article>
+          <article class="card"><div class="feature-icon">↕</div><h3>キー・テンポ調整</h3><p>再生速度、キー、ボーカル低減を曲ごとに調整。Full版では録音した歌声からキーやテンポを確かめるワークフローも利用できます。</p></article>
+          <article class="card"><div class="feature-icon">●</div><h3>録音・Take・MIX</h3><p>Full版では原曲を聴きながら録音し、Takeを残して部分採用やMIXへ。録音済みTakeを壊さず編集を進めます。</p></article>
+          <article class="card"><div class="feature-icon">↧</div><h3>オフラインキャッシュ</h3><p>YouTube再生のオフライン用音声キャッシュに対応。自動取得は安定再生後・再生停止中・アイドル時に限定し、前景操作を優先します。</p></article>
+          <article class="card"><div class="feature-icon">⌘</div><h3>外部操作</h3><p>Stream Deck向けのローカル操作APIや、コピーしたYouTube URLを扱うショートカットに対応。外部操作APIは127.0.0.1だけで待ち受けます。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap hero-grid" style="align-items:start">
+        <div class="section-head" style="margin:0">
+          <span class="eyebrow">Library first</span>
+          <h2 style="margin-top:13px">曲を探して、そのまま次の操作へ。</h2>
+          <p>カード／リスト表示、手動並び替え、スマートコレクション、プレイリスト、再生履歴を1つのサイドバーから扱います。プレイリスト間のドラッグではコピー／Shift移動を使い分けられます。</p>
+          <div class="callout" style="margin-top:26px"><strong>データは勝手に外へ送りません。</strong><p class="muted">ライブラリ、履歴、録音、設定は利用形態に応じたローカル領域へ保存します。診断ZIPやGitHub報告も自動送信せず、ユーザーが確認してから扱います。</p></div>
+        </div>
+        <div class="grid cols-2">
+          <article class="card"><h3>Dark / Light / System</h3><p>明るさとカラースキンを分けて選択。Purple / Blue / Green / Rose / Amberの5系統を用意し、背景画像・グラデーション・キャラクター背景も別に調整できます。</p></article>
+          <article class="card"><h3>コメントと書き出し</h3><p>再生位置に紐づくコメントを残し、曲コメントやプレイリストを右クリックからJSONへ書き出せます。共有時も保存データを直接書き換えません。</p></article>
+          <article class="card"><h3>更新を安全に確認</h3><p>通常インストール版は公開更新チャネルを自動確認。更新ZIPのURL、サイズ、SHA-256、Ed25519署名を検証し、ユーザーが許可してから更新します。</p></article>
+          <article class="card"><h3>困ったときもアプリから</h3><p>設定から不具合報告、改善提案、診断ZIP作成へ進めます。次版では、同じガイドをアプリ内の「ヘルプ・使い方」から開けるよう準備しています。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Editions</span>
+          <h2 style="margin-top:13px">PlayerとFull</h2>
+          <p>再生中心のPlayerと、録音・解析を含むFullがあります。どちらもライブラリ、歌詞、YouTube、外観、オフライン機能を共有します。</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>機能</th><th>Player</th><th>Full</th></tr></thead>
+            <tbody>
+              <tr><td>ローカル音楽 / YouTube再生</td><td>利用可</td><td>利用可</td></tr>
+              <tr><td>ライブラリ / プレイリスト / 歌詞 / コメント</td><td>利用可</td><td>利用可</td></tr>
+              <tr><td>オフラインキャッシュ / 外観 / 外部操作</td><td>利用可</td><td>利用可</td></tr>
+              <tr><td>録音 / Take編集 / MIX</td><td>なし</td><td>利用可</td></tr>
+              <tr><td>歌唱キー・テンポ確認 / 歌唱解析</td><td>なし</td><td>利用可</td></tr>
+              <tr><td>AI音源分離</td><td>なし</td><td>必要時に追加準備</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap callout">
+        <span class="eyebrow">Start here</span>
+        <h2 style="margin-top:12px;font-size:clamp(1.8rem,3.5vw,2.8rem)">はじめて使うなら、ガイドから。</h2>
+        <p class="muted">初回SetupはPublic GitHubには置かず、配布元から直接受け取る運用です。インストール後の更新だけが公開更新チャネルを利用します。</p>
+        <div class="actions"><a class="button primary" href="guide/">LyraStage 使い方ガイド</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>LyraStage by HisagiLabs</span><span>Current stable: v0.17.23</span></div></footer>
+</body>
+</html>
