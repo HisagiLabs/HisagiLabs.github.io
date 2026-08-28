@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090a12" />
+  <meta name="description" content="LyraStage 使い方ガイド - ライブラリ、YouTube、歌詞、録音、MIX、更新、トラブル対応。" />
+  <title>LyraStage 使い方ガイド - HisagiLabs</title>
+  <link rel="stylesheet" href="../../assets/site.css" />
+</head>
+<body>
+  <header class="site-header no-print">
+    <div class="wrap header-inner">
+      <a class="brand" href="../../"><span class="brand-mark" aria-hidden="true"></span><span>HisagiLabs</span></a>
+      <nav class="nav" aria-label="LyraStageガイドナビゲーション">
+        <a href="../">LyraStage</a>
+        <a class="keep-mobile" href="./" aria-current="page">使い方</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">User guide</span>
+          <h1 class="compact">LyraStage<br />使い方ガイド</h1>
+          <p class="lead">最初の曲追加から、YouTube、歌詞、録音、MIX、更新、困ったときの確認まで。必要な項目だけ読めるようにまとめています。</p>
+          <div class="badges"><span class="badge accent">対象: v0.17.23</span><span class="badge">Full / Player</span><span class="badge">2026-08-28</span></div>
+          <div class="actions no-print"><a class="button primary" href="#quick-start">まず使う</a><a class="button secondary" href="../">製品ページへ戻る</a></div>
+        </div>
+        <figure class="hero-visual" style="margin:0">
+          <div class="app-shot"><img src="../assets/motion-lyrics-demo.png" alt="LyraStageのモーション歌詞画面" /></div>
+          <figcaption class="muted small" style="margin-top:12px">Windows版の診断用サンプル画面。実ユーザーの個人データは含みません。</figcaption>
+        </figure>
+      </div>
+      <div class="wrap print-only" style="margin-top:10mm;border-top:1px solid #ddd;padding-top:6mm;color:#555">LyraStage User Guide / HisagiLabs / Current stable v0.17.23 / 2026-08-28</div>
+    </section>
+
+    <section class="section" style="padding-top:30px">
+      <div class="wrap guide-layout">
+        <aside class="toc no-print" aria-label="目次">
+          <strong>目次</strong>
+          <a href="#quick-start">1. まず使う</a>
+          <a href="#library">2. ライブラリ</a>
+          <a href="#youtube">3. YouTube</a>
+          <a href="#lyrics">4. 歌詞・モーション歌詞</a>
+          <a href="#playback">5. 再生調整</a>
+          <a href="#offline">6. オフライン</a>
+          <a href="#recording">7. 録音・MIX</a>
+          <a href="#analysis">8. キー・テンポ・解析</a>
+          <a href="#playlists">9. プレイリスト・コメント</a>
+          <a href="#appearance">10. 外観</a>
+          <a href="#external">11. Stream Deck・リンク</a>
+          <a href="#data">12. データ・共有</a>
+          <a href="#updates">13. 更新</a>
+          <a href="#troubleshooting">14. 困ったとき</a>
+          <a href="#editions">15. Player / Full</a>
+        </aside>
+
+        <article class="guide-article">
+          <section id="quick-start">
+            <span class="eyebrow">01 / Quick start</span>
+            <h2>まず使う</h2>
+            <p>LyraStageはライブラリを中心に使います。最初は曲を1つ追加して再生できれば十分です。</p>
+            <ol class="step-list">
+              <li><strong>曲を追加する。</strong><br />左下の「ファイル追加」または「フォルダ登録」から、手元の音楽・動画をライブラリへ追加します。</li>
+              <li><strong>ライブラリから曲を選ぶ。</strong><br />カードまたはリストの曲を選ぶと中央ステージと下部プレイヤーがその曲へ切り替わります。</li>
+              <li><strong>再生する。</strong><br />下部中央の再生ボタンを使います。歌詞がある曲は右パネルから歌詞表示へ切り替えられます。</li>
+              <li><strong>必要になった機能だけ開く。</strong><br />YouTube、歌詞設定、オフライン、録音、キー確認などは後から使えます。</li>
+            </ol>
+            <p class="note"><strong>通常インストール版とPortable版では保存場所が異なります。</strong> どちらでもライブラリ、設定、コメント、オフラインキャッシュを利用できます。Portable版はフォルダごと移動する前提です。</p>
+          </section>
+
+          <section id="library">
+            <span class="eyebrow">02 / Library</span>
+            <h2>ライブラリを整理する</h2>
+            <h3>表示と並び順</h3>
+            <p>ライブラリはカード表示とリスト表示を切り替えられます。並び順は手動、追加順、タイトル、アーティスト、最近などから選べます。</p>
+            <ul>
+              <li><strong>手動</strong>ではカード／行をドラッグして並び替えられます。</li>
+              <li>Music / Videoのフィルター中でも、手動並び替えは表示範囲の安全な境界を保って保存します。</li>
+              <li>検索・スマートコレクション・非手動並び順では、曖昧な並び替えを保存しません。</li>
+            </ul>
+            <h3>ライブラリプロフィール</h3>
+            <p>用途ごとにライブラリプロフィールを分けられます。共有用プロフィールを作り、個人用とは別に曲やコメントを扱うこともできます。</p>
+            <h3>お気に入り / あとで見る / 再生履歴</h3>
+            <p>左サイドバーからすぐ開けます。再生履歴はライブラリの曲を探し直す補助として使えます。</p>
+          </section>
+
+          <section id="youtube">
+            <span class="eyebrow">03 / YouTube</span>
+            <h2>YouTubeを再生する</h2>
+            <p>ライブラリ画面の検索欄は、保存済みライブラリとYouTube検索を同じ流れで扱います。保存済みの同一候補があれば、ライブラリ側を上に表示します。</p>
+            <ol class="step-list">
+              <li>曲名、アーティスト名、またはYouTube URLを検索欄へ入力します。</li>
+              <li>保存済みライブラリ候補を確認し、その下のYouTube結果から必要な動画を選びます。</li>
+              <li>再生だけなら追加せず開けます。保存したい場合はライブラリへ追加します。</li>
+            </ol>
+            <p>再生はYouTube IFrame、direct stream、必要時のFFmpeg fallbackを使い分けます。再生準備中は状態を表示し、同じ動画のURL解決を重複して走らせません。</p>
+            <h3>リンクをコピーしてすぐ再生</h3>
+            <p>設定で「コピーしたYouTubeリンクを検出」とグローバルショートカットを有効にすると、LyraStage起動中に <span class="kbd">Ctrl</span> + <span class="kbd">Alt</span> + <span class="kbd">L</span> でクリップボードのYouTubeリンクを追加せず再生できます。</p>
+          </section>
+
+          <section id="lyrics">
+            <span class="eyebrow">04 / Lyrics</span>
+            <h2>歌詞・モーション歌詞</h2>
+            <p>右パネルの「歌詞」では同期歌詞を一覧表示できます。中央ステージをモーション表示にすると、現在の歌詞を大きく表示します。</p>
+            <h3>歌詞候補</h3>
+            <p>オンライン候補が見つかっても自動適用はしません。候補の案内を確認して、使う歌詞をユーザーが選びます。候補順は曲の長さとの一致を重視します。</p>
+            <h3>タイミング調整</h3>
+            <p>「歌詞が音より遅い → 早める」「歌詞が音より先に出る → 遅らせる」の案内に沿って同期タイミングを調整できます。</p>
+            <h3>長い間奏</h3>
+            <p>現在の長い歌詞行は、長い間奏中でも不自然に消えず、穏やかな待機モーションで残ります。次の歌詞時刻に到達すると自然に切り替わります。</p>
+          </section>
+
+          <section id="playback">
+            <span class="eyebrow">05 / Playback</span>
+            <h2>再生を歌いやすく調整する</h2>
+            <p>曲ごとの再生調整から、再生速度、キー、ボーカル低減を設定できます。歌詞や録音と同じ再生位置を基準に動きます。</p>
+            <ul>
+              <li><strong>再生速度</strong>: 練習時のテンポ変更に使用します。</li>
+              <li><strong>キー</strong>: 半音単位の調整に使用します。</li>
+              <li><strong>ボーカル低減</strong>: 対応する再生経路でセンター成分を抑える補助機能です。</li>
+            </ul>
+            <p class="note">再生方式によって利用できる処理能力は異なります。LyraStage内部ではBackend capabilityとして区別し、対応していない加工を無理に適用しません。</p>
+          </section>
+
+          <section id="offline">
+            <span class="eyebrow">06 / Offline</span>
+            <h2>オフラインキャッシュ</h2>
+            <p>保存済みYouTube曲は、有効なオフラインキャッシュがあればオンライン経路より先に利用します。現行のYouTubeキャッシュは音声用です。</p>
+            <h3>自動取得のタイミング</h3>
+            <p>自動キャッシュは再生開始と同時には動きません。8秒間の安定再生後にキューへ入り、再生・録音が止まっていて、ユーザー操作も落ち着いているときだけ低優先度で開始します。</p>
+            <h3>前景操作を優先</h3>
+            <p>再生やユーザー操作が再開した場合は、前景処理を優先します。自動取得は1件ずつ動きます。</p>
+          </section>
+
+          <section id="recording">
+            <span class="eyebrow">07 / Full only</span>
+            <h2>録音・Take・MIX</h2>
+            <p><strong>Full版の機能です。</strong> ライブラリの曲から録音ワークスペースを開き、原曲をガイドにしながら歌声を録音できます。</p>
+            <ol class="step-list">
+              <li>録音したい曲を選び、録音ワークスペースを開きます。</li>
+              <li>マイクと必要な録音範囲を確認します。「原曲を聴きながら録音」を使う場合は、録音開始前に元の再生経路を復元します。</li>
+              <li>録音するとTakeとして残ります。録り直しても以前のTakeをすぐ削除しません。</li>
+              <li>MIX画面でTakeを比較し、必要な部分を採用して仕上げます。</li>
+            </ol>
+            <p>部分録り直しや「この部分を使う」では既存Takeを保持します。高度な編集では自然なクロスフェード、既存BPM/拍アンカーを使ったスナップ、歌唱解析の重ね表示も利用できます。</p>
+          </section>
+
+          <section id="analysis">
+            <span class="eyebrow">08 / Full only</span>
+            <h2>キー・テンポ・歌唱解析</h2>
+            <p><strong>Full版の機能です。</strong> 録音した声と原曲の歌唱範囲を合わせ、キーやテンポ差を確認できます。</p>
+            <h3>キー確認</h3>
+            <p>録音波形を原曲で実際に歌が始まる位置から終わる位置へ合わせます。必要に応じて範囲の端をストレッチし、長さの差をテンポ推定にも利用します。</p>
+            <h3>音域測定</h3>
+            <p>「自分の音域を測る」からガイド測定を開けます。基準音に合わせて発声し、歌いやすい音域確認の補助に使います。</p>
+            <h3>ビート</h3>
+            <p>自動解析に加え、手入力BPM、タップ、現在の拍を基準にしたタイミング調整ができます。</p>
+          </section>
+
+          <section id="playlists">
+            <span class="eyebrow">09 / Organize</span>
+            <h2>プレイリスト・コメント・書き出し</h2>
+            <p>通常プレイリストは曲順をドラッグして変更できます。ライブラリからプレイリストへドラッグするとコピー、プレイリスト間で <span class="kbd">Shift</span> を押しながら移動すると移動として扱います。</p>
+            <h3>サイドバーのプレイリスト</h3>
+            <p>プレイリスト自体もサイドバー内で並び替えられます。</p>
+            <h3>タイムコメント</h3>
+            <p>コメントは再生位置に紐づけて残せます。時刻は送信ボタンを押した瞬間ではなく、実際に文字入力を始めた再生位置を基準にします。</p>
+            <h3>右クリック書き出し</h3>
+            <p>ライブラリ曲のコメントとプレイリストは、右クリックメニューからJSONへ書き出せます。書き出しは保存済みデータを変更しません。</p>
+          </section>
+
+          <section id="appearance">
+            <span class="eyebrow">10 / Appearance</span>
+            <h2>外観を変える</h2>
+            <p>設定 → 表示 / 背景 / 歌詞から変更します。外観は明るさ、色、背景を分けて考えます。</p>
+            <div class="grid cols-2">
+              <div class="card"><h3>表示モード</h3><p>Dark / Light / Windows設定に合わせるSystem。</p></div>
+              <div class="card"><h3>カラースキン</h3><p>Purple / Blue / Green / Rose / Amber。DarkとLightそれぞれに適した組み合わせを使います。</p></div>
+              <div class="card"><h3>背景</h3><p>なし / グラデーション / 画像 / キャラクター。画像はローカルファイルを選びます。</p></div>
+              <div class="card"><h3>作業画面</h3><p>録音、MIX、キー診断、解析では装飾背景を弱め、作業面を読みやすくします。</p></div>
+            </div>
+          </section>
+
+          <section id="external">
+            <span class="eyebrow">11 / External control</span>
+            <h2>Stream Deck・YouTubeリンク連携</h2>
+            <h3>Stream Deck</h3>
+            <p>設定 → OBS・Stream Deck連携で外部操作APIを有効にすると、配布フォルダの <code>StreamDeck</code> にあるVBSをStream Deckの「開く」アクションへ割り当てられます。</p>
+            <p>外部操作APIは <code>127.0.0.1</code> のみで待ち受け、LANやインターネットへ公開しません。</p>
+            <h3>YouTubeリンク</h3>
+            <p>クリップボード監視はYouTube URLだけを判定し、それ以外のクリップボード内容をLyraStageへ保存しません。アプリを終了すると監視とグローバルショートカットも終了します。</p>
+          </section>
+
+          <section id="data">
+            <span class="eyebrow">12 / Data</span>
+            <h2>データ・共有・バックアップ</h2>
+            <h3>個人データ</h3>
+            <p>ライブラリ、設定、コメント、履歴、録音などはローカル領域で扱います。通常インストール版とPortable版では保存先の境界を分けています。</p>
+            <h3>ライブラリ共有</h3>
+            <p>ライブラリプロフィールは書き出し・取り込みができます。既存曲は再利用し、既存プレイリストや既存コメントを一方的に上書きしない安全側の取り込みを行います。</p>
+            <h3>プロフィール移行</h3>
+            <p>共有ライブラリやLyraStageプロフィールを使って別環境へ移す場合は、取り込み前に対象と保存先を確認してください。</p>
+          </section>
+
+          <section id="updates">
+            <span class="eyebrow">13 / Update</span>
+            <h2>LyraStageを更新する</h2>
+            <p>通常インストール版は起動時に公開GitHubの更新専用チャネルを確認します。GitHubログインやTailscaleは不要です。</p>
+            <ol class="step-list">
+              <li>新しい版がある場合、LyraStageが更新可能であることを表示します。</li>
+              <li>「更新内容を見る」で変更点を確認します。</li>
+              <li>「更新を準備」を押すと更新ZIPを取得し、URL、サイズ、SHA-256、Ed25519署名を検証します。</li>
+              <li>検証済みになったら「LyraStageを終了して更新」を押します。ユーザーの許可なしに勝手に置換しません。</li>
+            </ol>
+            <p class="note">初回インストール用Setupは公開更新リポジトリに置きません。初回Setupは配布元から受け取る運用です。</p>
+          </section>
+
+          <section id="troubleshooting">
+            <span class="eyebrow">14 / Support</span>
+            <h2>困ったとき</h2>
+            <h3>まず確認する</h3>
+            <ul>
+              <li>アプリを終了して再起動する。</li>
+              <li>YouTubeだけの問題なら、オンライン再生かオフラインキャッシュかを確認する。</li>
+              <li>通常インストール版なら設定 → LyraStageのアップデート → 「更新を確認」で最新版を確認する。</li>
+            </ul>
+            <h3>不具合を報告する</h3>
+            <p>設定 → 不具合・改善報告からGitHubの報告画面を開けます。Version、Build、Editionなど基本環境だけを自動入力し、曲名、URL、録音内容、認証情報は自動入力しません。</p>
+            <h3>診断ZIP</h3>
+            <p>「診断ZIPを作る」で調査用ZIPを作成できます。自動送信はしません。中身を確認して、必要な場合だけ報告へ添付してください。</p>
+            <h3>起動できない場合</h3>
+            <p>配布フォルダの <code>START_LYRASTAGE_DEBUG.bat</code> を使うと、通常起動より詳しい確認ができます。Windowsのセキュリティ設定を無効にすることを解決策にはしません。</p>
+          </section>
+
+          <section id="editions">
+            <span class="eyebrow">15 / Editions</span>
+            <h2>Player / Full の違い</h2>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>機能</th><th>Player</th><th>Full</th></tr></thead>
+                <tbody>
+                  <tr><td>ライブラリ / YouTube / 歌詞 / コメント</td><td>○</td><td>○</td></tr>
+                  <tr><td>オフラインキャッシュ / 外観 / 外部操作</td><td>○</td><td>○</td></tr>
+                  <tr><td>録音 / Take / MIX</td><td>-</td><td>○</td></tr>
+                  <tr><td>キー・テンポ・歌唱解析</td><td>-</td><td>○</td></tr>
+                  <tr><td>AI分離</td><td>-</td><td>必要時に追加</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="margin-top:24px">PlayerはFull機能を単に隠しただけではなく、録音・解析・MIX・AI関連のPlayer不要モジュールを配布payloadから除外しています。</p>
+          </section>
+
+          <section>
+            <span class="eyebrow">End</span>
+            <h2>迷ったら、ライブラリへ戻る。</h2>
+            <p>LyraStageはライブラリを入口にしています。曲を選び直せば、再生、歌詞、録音、解析の対象もその曲へ揃います。使わない機能は開かなくて構いません。</p>
+            <div class="callout no-print"><strong>オンライン版</strong><p class="muted">このガイドの最新版はHisagiLabsのLyraStage製品ページから開けます。</p><div class="actions"><a class="button primary" href="../">LyraStage製品ページ</a></div></div>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>LyraStage User Guide</span><span>HisagiLabs / 2026-08-28</span></div></footer>
+</body>
+</html>
