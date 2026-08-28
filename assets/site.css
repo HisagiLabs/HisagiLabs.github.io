@@ -75,6 +75,8 @@ h3 { font-size: 1.18rem; letter-spacing: -.015em; }
 .section-head { max-width: 760px; margin-bottom: 30px; }
 .section-head p { color: var(--muted); margin: 14px 0 0; }
 .grid { display: grid; gap: 16px; }
+.hero-grid > *, .grid > *, .product-card > * { min-width: 0; }
+p, li, td, figcaption { overflow-wrap: anywhere; }
 .grid.cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
 .grid.cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
 .card { background: linear-gradient(180deg, rgba(24,27,45,.82), rgba(17,19,31,.9)); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; box-shadow: 0 15px 45px rgba(0,0,0,.12); }
