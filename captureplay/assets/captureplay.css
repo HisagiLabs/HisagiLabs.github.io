@@ -88,7 +88,7 @@
   .cp-preview { height:auto; aspect-ratio:16/9; }
   .cp-output-image { aspect-ratio:16/9; }
   .cp-link-line { display:none; }
-  .cp-visual-label { position:static; justify-self:end; margin-top:-2px; }
+  .cp-visual-label { position:static; justify-self:end; margin-top:-2px; order:3; }
   .signal-flow { grid-template-columns:1fr; gap:8px; }
   .flow-node { min-height:116px; }
   .flow-arrow { transform:rotate(90deg); justify-self:center; }
@@ -98,6 +98,8 @@
 @media (max-width:520px) {
   .captureplay-hero .wrap { width:min(calc(100% - 24px),1320px); }
   .captureplay-hero h1 { font-size:clamp(2.75rem,15vw,4rem); }
+  .captureplay-hero .actions { display:grid; grid-template-columns:1fr; }
+  .captureplay-hero .actions .button { width:100%; }
   .role-note { font-size:.86rem; }
   .cp-titlebar { height:28px; }
   .cp-device-row { grid-template-columns:.8fr 1.8fr .75fr .95fr; }
