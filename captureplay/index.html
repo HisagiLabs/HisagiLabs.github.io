@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090a12" />
+  <meta name="description" content="CapturePlay - キャプチャーボードの映像を手軽に見る・録る・確認するためのWindowsアプリ。低遅延プレビュー、画面分離、録画、撮影、音声調整、キャプチャーボード診断に対応。" />
+  <title>CapturePlay - irodoli</title>
+  <link rel="icon" href="assets/icon.png" />
+  <link rel="stylesheet" href="../assets/site.css" />
+  <link rel="stylesheet" href="assets/captureplay.css" />
+  <script src="product-page.js" defer></script>
+</head>
+<body class="captureplay-page">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"></span><span>irodoli</span></a>
+      <nav class="nav" aria-label="CapturePlayナビゲーション">
+        <a href="./" aria-current="page">CapturePlay</a>
+        <a href="#features">できること</a>
+        <a class="keep-mobile" href="https://dl.irodoli.com/">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero captureplay-hero">
+      <div class="wrap captureplay-hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Capture board companion</span>
+          <h1 class="compact">つないで、<br />すぐ見る。すぐ録る。</h1>
+          <p class="lead">CapturePlayは、キャプチャーボードのゲーム映像を手軽に表示・録画・確認するWindowsアプリです。低遅延で見ながら、映像だけを別ウィンドウへ分離できます。</p>
+          <div class="actions">
+            <a class="button primary" href="https://dl.irodoli.com/">CapturePlayをダウンロード</a>
+            <a class="button secondary" href="#features">できることを見る</a>
+          </div>
+          <div class="badges">
+            <span class="badge accent"><span class="status-dot"></span>Latest <span data-latest-version class="version-slot">読み込み中</span></span>
+            <span class="badge">Windows 10 / 11</span>
+            <span class="badge">by irodoli</span>
+          </div>
+          <p class="role-note"><strong>配信レイアウトを組む総合配信ソフトではありません。</strong><br />キャプチャーボードを「見る・録る・確認する」操作を、シンプルにまとめることがCapturePlayの役割です。</p>
+        </div>
+
+        <figure class="captureplay-visual" aria-label="CapturePlayの操作画面と分離映像の製品紹介ビジュアル">
+          <div class="cp-showcase">
+            <div class="cp-window cp-operator-window">
+              <div class="cp-titlebar"><img src="assets/icon.png" alt="" /><span>CapturePlay</span><div class="cp-win-buttons"><i></i><i></i><i></i></div></div>
+              <div class="cp-preview">
+                <img src="assets/game-feed.png" alt="SuperTuxKartのゲーム映像サンプル" />
+                <div class="cp-stats"><b>1366 × 768</b><span>60 fps</span><span>低遅延表示</span><span>音声 ON</span></div>
+              </div>
+              <div class="cp-dock">
+                <div class="cp-device-row">
+                  <div class="cp-field"><small>入力</small><b>外部入力</b></div>
+                  <div class="cp-field cp-field-wide"><small>映像</small><b>キャプチャーボード入力</b></div>
+                  <div class="cp-field"><small>画質</small><b>1080p</b></div>
+                  <div class="cp-field"><small>表示</small><b>低遅延（推奨）</b></div>
+                  <div class="cp-field cp-secondary-control"><small>録画品質</small><b>高画質</b></div>
+                </div>
+                <div class="cp-action-row">
+                  <span class="cp-status"><i></i>表示中</span>
+                  <span class="cp-control active">画面分離</span>
+                  <span class="cp-control record"><i></i>録画</span>
+                  <span class="cp-control">撮影</span>
+                  <span class="cp-control cp-secondary-control">全画面</span>
+                  <span class="cp-control cp-secondary-control">音量ミキサー</span>
+                  <span class="cp-control">設定</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cp-window cp-output-window">
+              <div class="cp-titlebar"><img src="assets/icon.png" alt="" /><span>CapturePlay 映像</span><div class="cp-win-buttons"><i></i><i></i><i></i></div></div>
+              <div class="cp-output-image"><img src="assets/game-feed.png" alt="分離表示されたゲーム映像サンプル" /></div>
+            </div>
+            <div class="cp-link-line" aria-hidden="true"></div>
+            <span class="cp-visual-label">操作は左。ゲーム映像は別ウィンドウへ。</span>
+          </div>
+          <figcaption>現行のCapturePlay実UIを基にした製品紹介ビジュアル。映像部分には紹介用のゲーム画像を使用しています。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">What you can do</span>
+          <h2 style="margin-top:13px">キャプチャーボードを、もっと手軽に。</h2>
+          <p>ゲーム機や別PCから来た映像を、確認したいときにすぐ開く。必要なら録る。画面だけ分ける。CapturePlayは、その日常的な操作に絞っています。</p>
+        </div>
+        <div class="grid cols-3 feature-grid">
+          <article class="card"><div class="feature-icon">◉</div><h3>低遅延プレビュー</h3><p>キャプチャーボードの映像を低遅延表示。ゲーム画面を見ながら操作したいときの確認用モニターとして使えます。</p></article>
+          <article class="card"><div class="feature-icon">↗</div><h3>映像だけを画面分離</h3><p>操作ボタンはメイン画面に残し、ゲーム映像だけを独立ウィンドウへ。Discord共有や別モニターで扱いやすくなります。</p></article>
+          <article class="card"><div class="feature-icon">●</div><h3>録画</h3><p>見ている映像をそのまま録画。プレイ記録や動作確認を、別の大きな配信環境を組まずに残せます。</p></article>
+          <article class="card"><div class="feature-icon">▣</div><h3>スクリーンショット</h3><p>気になった瞬間をすぐ撮影。ゲーム画面や接続確認の記録をPNGで保存できます。</p></article>
+          <article class="card"><div class="feature-icon">♫</div><h3>音声を確認・調整</h3><p>ゲーム音声や利用できる音声ソースを確認し、再生・録画のバランスを調整。4CHミキサーにも対応します。</p></article>
+          <article class="card"><div class="feature-icon">⌁</div><h3>キャプチャーボード診断</h3><p>入力FPSや表示処理、転送経路などを確認し、環境に合わせた改善ポイントをアプリから見つけやすくします。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section role-section">
+      <div class="wrap role-grid">
+        <div class="section-head role-copy">
+          <span class="eyebrow">Simple role</span>
+          <h2 style="margin-top:13px">ゲーム機とPCの間を、分かりやすく。</h2>
+          <p>HDMIで入ってきた映像をCapturePlayで開き、見る・録る・撮る・音を確認する。必要なら映像ウィンドウだけを分離して、別のアプリへ見せます。</p>
+          <div class="callout distinction"><strong>OBSなどとは役割が違います。</strong><p class="muted">シーン合成や配信レイアウトを作る総合配信ソフトではありません。CapturePlayはキャプチャーボード映像の表示・記録・状態確認を軽く扱うためのアプリです。</p></div>
+        </div>
+        <div class="signal-flow" aria-label="ゲーム機からCapturePlayまでの接続イメージ">
+          <div class="flow-node"><span class="flow-icon">▰</span><strong>ゲーム機 / 別PC</strong><small>HDMI映像</small></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="flow-icon">◇</span><strong>キャプチャーボード</strong><small>PCへ映像入力</small></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node highlight"><img src="assets/icon.png" alt="" /><strong>CapturePlay</strong><small>見る・録る・確認する</small></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="flow-icon">▣</span><strong>モニター / Discord</strong><small>分離画面を活用</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ui-section">
+      <div class="wrap ui-grid">
+        <div class="ui-copy">
+          <span class="eyebrow">Designed for quick access</span>
+          <h2 style="margin-top:13px">よく使う操作は、映像のすぐ下に。</h2>
+          <p>入力、画質、低遅延表示、録画品質を選び、表示中は「画面分離」「録画」「撮影」「全画面」「音量ミキサー」へすぐ移動できます。</p>
+          <ul class="plain-list">
+            <li><strong>外部入力</strong>を基本に、ウィンドウや画面入力にも対応</li>
+            <li>映像の解像度・FPS・表示方式をオーバーレイで確認</li>
+            <li>Dark / Light / Windows設定に合わせた外観</li>
+            <li>機器情報や設定はローカル中心で扱う設計</li>
+          </ul>
+        </div>
+        <div class="card ui-detail-card">
+          <div class="mini-control-row"><span>表示中</span><b>画面分離</b><b>録画</b><b>撮影</b></div>
+          <div class="ui-detail-image"><img src="assets/game-feed.png" alt="CapturePlayで扱うゲーム映像のサンプル" /></div>
+          <p>映像を大きく見たいときは「画面分離」。操作画面を小さく残し、映像だけを独立して扱えます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section download-section">
+      <div class="wrap download-card">
+        <div>
+          <span class="eyebrow">Download</span>
+          <h2 style="margin-top:12px">CapturePlayを使ってみる。</h2>
+          <p class="muted">Latest <strong data-latest-version class="latest-inline">読み込み中</strong> · Windows 10 / 11</p>
+        </div>
+        <a class="button primary download-button" href="https://dl.irodoli.com/">ダウンロードページを開く</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner"><span>CapturePlay by irodoli</span><span>Latest: <span data-latest-version>読み込み中</span></span></div>
+    <div class="wrap media-credit">Sample game image: “SuperTuxKart in-race (2018)” by QwertyChouskie, <a href="https://commons.wikimedia.org/wiki/File:SuperTuxKart_in-race_(2018).png">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. The image is shown inside a CapturePlay product visual.</div>
+  </footer>
+</body>
+</html>
