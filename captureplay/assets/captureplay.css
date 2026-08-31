@@ -3,6 +3,7 @@
 .captureplay-hero { padding-top:60px; overflow:hidden; }
 .captureplay-hero .wrap { width:min(calc(100% - 40px), 1320px); }
 .captureplay-hero-grid { display:grid; grid-template-columns:minmax(360px,.78fr) minmax(620px,1.22fr); gap:46px; align-items:center; }
+.captureplay-hero-grid > *, .captureplay-hero .hero-copy { min-width:0; max-width:100%; }
 .captureplay-page .captureplay-hero h1.compact { font-size:clamp(2.35rem,3vw,2.9rem); }
 .captureplay-hero h1 .hero-line { display:block; }
 .captureplay-page h2 { font-size:clamp(1.6rem,2.25vw,2.2rem); }
