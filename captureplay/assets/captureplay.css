@@ -61,13 +61,12 @@
 .plain-list { margin:24px 0 0; padding:0; list-style:none; display:grid; gap:10px; }
 .plain-list li { position:relative; padding-left:20px; color:#c7cadc; }
 .plain-list li::before { content:""; position:absolute; left:0; top:.72em; width:8px; height:8px; border-radius:50%; background:#43d8e8; box-shadow:0 0 12px rgba(67,216,232,.4); }
-.ui-detail-card { padding:14px; overflow:hidden; }
-.mini-control-row { display:flex; align-items:center; gap:7px; padding:4px 2px 12px; overflow:hidden; }
-.mini-control-row span,.mini-control-row b { display:inline-flex; align-items:center; min-height:28px; padding:0 9px; border:1px solid rgba(255,255,255,.11); border-radius:8px; background:#182235; font-size:.72rem; white-space:nowrap; }
-.mini-control-row span { border-radius:999px; background:#111a2a; color:#9ff0c8; }
-.ui-detail-image { aspect-ratio:16/9; overflow:hidden; border-radius:14px; background:#000; }
-.ui-detail-image img { width:100%; height:100%; object-fit:cover; }
-.ui-detail-card p { padding:0 5px 3px; }
+.game-variety-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; min-width:0; }
+.game-shot { margin:0; min-width:0; overflow:hidden; border:1px solid var(--line); border-radius:18px; background:rgba(18,21,35,.78); box-shadow:0 18px 46px rgba(0,0,0,.22); }
+.game-shot img { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; background:#05080e; }
+.game-shot figcaption { display:grid; gap:4px; padding:13px 14px 14px; }
+.game-shot figcaption strong { color:#f2f5fb; font-size:.86rem; }
+.game-shot figcaption span { color:var(--muted); font-size:.72rem; line-height:1.55; }
 .media-credit { margin-top:15px; color:#686e85; font-size:.72rem; line-height:1.5; }
 .media-credit a { color:#858ca6; }
 
@@ -76,6 +75,7 @@
   .captureplay-hero .hero-copy { max-width:780px; }
   .captureplay-visual { max-width:920px; width:100%; margin:0 auto; }
   .role-grid,.ui-grid { grid-template-columns:1fr; }
+  .game-variety-grid { max-width:920px; }
   .signal-flow { max-width:900px; }
 }
 @media (max-width:760px) {
@@ -108,5 +108,6 @@
   .cp-status,.cp-control { min-height:24px; padding:0 6px; font-size:6.2px; }
   .cp-stats { right:6px; top:6px; font-size:5.8px; padding:5px; }
   .cp-visual-label { font-size:.66rem; }
+  .game-variety-grid { grid-template-columns:1fr; }
   .media-credit { font-size:.66rem; }
 }
