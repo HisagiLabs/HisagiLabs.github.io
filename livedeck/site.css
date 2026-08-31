@@ -78,3 +78,11 @@ body{overflow-x:hidden}.hero-grid>*{min-width:0}.app-window,.app-titlebar,.app-a
 /* PRODUCT-PAGE-TITLE-PHRASES */
 .hero h1 span{display:inline}
 @media(max-width:640px){.hero h1 span{display:block}}
+
+/* Fictional demo content inside the real LiveDeck pane structure. */
+.video.has-art{background:#172238}
+.video.has-art:before,.video.has-art:after{display:none}
+.stream-visual{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.video.has-art:after{content:"";display:block;position:absolute;inset:auto 0 0;width:auto;height:42%;aspect-ratio:auto;background:linear-gradient(180deg,transparent,rgba(8,17,34,.48));border-radius:0}
+.video.has-art .video-copy{z-index:3}
+.video.has-art .live-pill{z-index:4}
