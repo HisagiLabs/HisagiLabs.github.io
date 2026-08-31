@@ -3,7 +3,7 @@
 .captureplay-hero { padding-top:60px; overflow:hidden; }
 .captureplay-hero .wrap { width:min(calc(100% - 40px), 1320px); }
 .captureplay-hero-grid { display:grid; grid-template-columns:minmax(360px,.78fr) minmax(620px,1.22fr); gap:46px; align-items:center; }
-.captureplay-hero h1 { font-size:clamp(2.45rem,3vw,2.9rem); }
+.captureplay-page .captureplay-hero h1.compact { font-size:clamp(2.35rem,3vw,2.9rem); }
 .captureplay-hero h1 .hero-line { display:block; }
 .captureplay-page h2 { font-size:clamp(1.6rem,2.25vw,2.2rem); }
 .captureplay-hero .lead { max-width:610px; }
@@ -93,7 +93,7 @@
 }
 @media (max-width:520px) {
   .captureplay-hero .wrap { width:min(calc(100% - 24px),1320px); }
-  .captureplay-hero h1 { font-size:clamp(1.95rem,8.4vw,2.2rem); }
+  .captureplay-page .captureplay-hero h1.compact { font-size:clamp(1.9rem,8.1vw,2.15rem); }
   .captureplay-hero .actions { display:grid; grid-template-columns:1fr; }
   .captureplay-hero .actions .button { width:100%; }
   .role-note { font-size:.86rem; }
