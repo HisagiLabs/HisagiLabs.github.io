@@ -1,10 +1,11 @@
 .captureplay-page { --cp-accent:#43d8e8; --cp-green:#52e0a0; --cp-red:#ff4f67; }
 .captureplay-page .site-header { background:rgba(7,11,18,.80); }
-.captureplay-hero { padding-top:72px; overflow:hidden; }
+.captureplay-hero { padding-top:60px; overflow:hidden; }
 .captureplay-hero .wrap { width:min(calc(100% - 40px), 1320px); }
-.captureplay-hero-grid { display:grid; grid-template-columns:minmax(330px,.72fr) minmax(620px,1.28fr); gap:44px; align-items:center; }
-.captureplay-hero h1 { font-size:clamp(2.8rem,4.2vw,4.4rem); }
-.captureplay-page h2 { font-size:clamp(1.75rem,2.8vw,2.55rem); }
+.captureplay-hero-grid { display:grid; grid-template-columns:minmax(360px,.78fr) minmax(620px,1.22fr); gap:46px; align-items:center; }
+.captureplay-hero h1 { font-size:clamp(2.45rem,3vw,2.9rem); }
+.captureplay-hero h1 .hero-line { display:block; white-space:nowrap; }
+.captureplay-page h2 { font-size:clamp(1.6rem,2.25vw,2.2rem); }
 .captureplay-hero .lead { max-width:610px; }
 .captureplay-page .badge.accent { border-color:rgba(67,216,232,.34); color:#c9f8ff; background:rgba(67,216,232,.10); }
 .version-slot, .latest-inline { margin-left:.28rem; }
@@ -92,7 +93,8 @@
 }
 @media (max-width:520px) {
   .captureplay-hero .wrap { width:min(calc(100% - 24px),1320px); }
-  .captureplay-hero h1 { font-size:clamp(2.35rem,11.7vw,3.05rem); }
+  .captureplay-hero h1 { font-size:clamp(2rem,8.8vw,2.3rem); }
+  .captureplay-hero h1 .hero-line { white-space:normal; }
   .captureplay-hero .actions { display:grid; grid-template-columns:1fr; }
   .captureplay-hero .actions .button { width:100%; }
   .role-note { font-size:.86rem; }
