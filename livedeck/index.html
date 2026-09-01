@@ -6,13 +6,14 @@
   <meta name="theme-color" content="#f6f8fc">
   <meta name="description" content="LiveDeck - 複数の配信や動画を1つのWindowsアプリに並べて見られるマルチビューア。">
   <title>LiveDeck - irodoli</title>
-  <link rel="icon" href="assets/livedeck-icon.png">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="site.css">
 </head>
 <body>
   <header class="site-header"><div class="wrap header-inner">
-    <a class="header-product" href="#top" aria-label="LiveDeck トップ"><img src="assets/livedeck-wordmark.svg" alt="LiveDeck"></a>
-    <div class="header-meta"><span class="maker">irodoli</span><span class="header-latest">Latest <strong>v0.8.10</strong></span></div>
+    <a class="publisher-lockup" href="#top" aria-label="irodoli / LiveDeck トップ"><img src="assets/irodoli-header-lockup.svg" alt="irodoli"><span aria-hidden="true">/</span><strong>LiveDeck</strong></a>
+    <div class="header-meta"><span class="header-latest">Latest <strong>v0.8.10</strong></span></div>
   </div></header>
   <main>
     <section id="top" class="hero"><div class="wrap hero-layout">
@@ -42,6 +43,16 @@
         <article class="feature-card"><div class="feature-mark">💬</div><h3>コメントを見るための補助</h3><div class="feature-visual visual-comments" aria-hidden="true"><span><i>●</i> ナイス！</span><span><i>●</i> がんばって！</span><span><i>●</i> 👏✨</span></div><p>対応する配信ではコメント表示を補助。配信画面を見ながら、必要なコメント周りの操作へすぐ移れます。</p></article>
         <article class="feature-card"><div class="feature-mark">⌕</div><h3>検索も各枠から</h3><div class="feature-visual visual-search" aria-hidden="true"><span class="mini-search">⌕ 配信を検索</span><div><i class="dot twitch"></i><i class="dot youtube"></i><i class="dot twitcasting"></i><i class="dot showroom"></i></div></div><p>対応サービスではLiveDeck上部の検索から目的の配信へ。枠ごとにサービスを選び、別の配信へ切り替えられます。</p></article>
       </div>
+    </div></section>
+    <section id="layouts" class="section layout-showcase-section"><div class="wrap">
+      <header class="section-head"><span class="eyebrow">Layouts</span><h2>配信数に合わせて、見やすくレイアウト</h2><p>1枠から4枠まで、見たい配信の数に合わせて表示を切り替え。集中して1つを見るときも、気になる配信をまとめて追いたいときも、見やすい形で並べられます。</p></header>
+      <div class="layout-demo-grid">
+        <article class="layout-demo-card"><div class="layout-preview layout-one" aria-hidden="true"><div class="layout-preview-bar"><span>LiveDeck</span><i>1枠</i></div><div class="layout-canvas"><span class="layout-shot shot-music"></span></div></div><h3>1つの配信を大きく表示</h3><p>1つの配信を大きく表示して、じっくり視聴。歌枠やゲーム実況など、ひとつの配信に集中したいときに便利です。</p></article>
+        <article class="layout-demo-card"><div class="layout-preview layout-two" aria-hidden="true"><div class="layout-preview-bar"><span>LiveDeck</span><i>2枠</i></div><div class="layout-canvas"><span class="layout-shot shot-music"></span><span class="layout-shot shot-genshin"></span></div></div><h3>2つの配信を並べてチェック</h3><p>気になる2つの配信を左右に並べて同時に視聴。推しの配信を見ながら、別の配信も追いたいときに役立ちます。</p></article>
+        <article class="layout-demo-card"><div class="layout-preview layout-three" aria-hidden="true"><div class="layout-preview-bar"><span>LiveDeck</span><i>3枠</i></div><div class="layout-canvas"><span class="layout-shot shot-genshin layout-main"></span><span class="layout-shot shot-minecraft"></span><span class="layout-shot shot-fps"></span></div></div><h3>メイン＋サブで見やすく整理</h3><p>よく見たい配信を大きめに、ほかの配信をサブ表示。メインを見失わずに、他の配信の様子もまとめて確認できます。</p></article>
+        <article class="layout-demo-card"><div class="layout-preview layout-four" aria-hidden="true"><div class="layout-preview-bar"><span>LiveDeck</span><i>4枠</i></div><div class="layout-canvas"><span class="layout-shot shot-music"></span><span class="layout-shot shot-genshin"></span><span class="layout-shot shot-minecraft"></span><span class="layout-shot shot-fps"></span></div></div><h3>最大4配信をまとめて表示</h3><p>4つの配信を一覧で表示して、まとめて視聴。複数人の配信を追いたいときや、いろいろ見比べたいときにぴったりです。</p></article>
+      </div>
+      <p class="layout-demo-note">画面例の配信映像は紹介用イメージです。実際の表示内容は各配信サービスや視聴ページによって異なります。</p>
     </div></section>
     <section class="section soft"><div class="wrap usage-grid"><div class="section-head compact"><span class="eyebrow">How to use</span><h2>追加して、並べて、見る。</h2><p>普段の配信視聴を大きく変えず、ブラウザで開いていたページをLiveDeckの枠にまとめる感覚で使えます。</p></div><ol class="steps"><li><span>1</span><div><strong>配信枠を追加</strong><p>見たいサービスを選んで配信を開きます。</p></div></li><li><span>2</span><div><strong>見やすく配置</strong><p>自動レイアウトや表示倍率で画面を整えます。</p></div></li><li><span>3</span><div><strong>お気に入りを残す</strong><p>よく見る配信先は次回すぐ開けるよう保存できます。</p></div></li></ol></div></section>
     <section id="services" class="section"><div class="wrap service-wrap"><header class="section-head compact"><span class="eyebrow">Services</span><h2>いろいろな配信サービスを、同じLiveDeckへ。</h2><p>サービスごとに検索方法やWeb画面の仕様は異なりますが、LiveDeckでは配信枠としてまとめて表示できます。</p></header><div class="service-list"><span>Twitch</span><span>YouTube Live</span><span>TwitCasting</span><span>SHOWROOM</span><span>Kick</span><span>mellow-fan</span><span>Mirrativ</span></div><p class="service-note">各サービスの名称・商標は各権利者に帰属します。LiveDeckは各サービスの公式アプリではありません。</p></div></section>
